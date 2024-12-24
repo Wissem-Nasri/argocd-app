@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test-app:1.0.0-72
+  name: test-app:1.0.0-73
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: test-app:1.0.0-72
+      app: test-app:1.0.0-73
   template:
     metadata:
       labels:
-        app: test-app:1.0.0-72
+        app: test-app:1.0.0-73
     spec:
       containers:
-        - name: test-app:1.0.0-72
-          image: wissem454/test-app:1.0.0-72
+        - name: test-app:1.0.0-73
+          image: wissem454/test-app:1.0.0-73
           resources:
             limits:
               memory: "256Mi"
