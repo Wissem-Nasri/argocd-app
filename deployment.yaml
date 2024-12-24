@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test-app-deployment 
+  name: register-app-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: test-app-WissemNasri
+      app: register-app
   template:
     metadata:
       labels:
-        app: test-app-WissemNasri
+        app: register-app
     spec:
       containers:
-        - name: test-app-WissemNasri
+        - name: register-app
           image: wissem454/test-app:1.0.0-74
           resources:
             limits:
