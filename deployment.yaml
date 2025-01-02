@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: register-app
-          image: wissem454/test-app:1.0.0-103
+          image: wissem454/test-app:1.0.0-106
           resources:
             limits:
               memory: "256Mi"
